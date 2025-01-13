@@ -1438,14 +1438,14 @@ object DbExperimentalMetrics {
       /** The database query being executed. <p>
         * @note
         *   <p> For sanitization see <a
-        *   href="../../docs/database/database-spans.md#sanitization-of-dbquerytext">Sanitization of
-        *   `db.query.text`</a>. For batch operations, if the individual operations are known to have the same query
-        *   text then that query text SHOULD be used, otherwise all of the individual query texts SHOULD be concatenated
-        *   with separator `; ` or some other database system specific separator if more applicable. Even though
-        *   parameterized query text can potentially have sensitive data, by using a parameterized query the user is
-        *   giving a strong signal that any sensitive data will be passed as parameter values, and the benefit to
-        *   observability of capturing the static part of the query text by default outweighs the risk. This attribute
-        *   has stability level RELEASE CANDIDATE.
+        *   href="../../docs/database/database-spans.md#sanitization-of-dbquerytext">Sanitization of `db.query.text`
+        *   </a>. For batch operations, if the individual operations are known to have the same query text then that
+        *   query text SHOULD be used, otherwise all of the individual query texts SHOULD be concatenated with separator
+        *   `; ` or some other database system specific separator if more applicable. Even though parameterized query
+        *   text can potentially have sensitive data, by using a parameterized query the user is giving a strong signal
+        *   that any sensitive data will be passed as parameter values, and the benefit to observability of capturing
+        *   the static part of the query text by default outweighs the risk. This attribute has stability level RELEASE
+        *   CANDIDATE.
         */
       val dbQueryText: AttributeSpec[String] =
         AttributeSpec(
@@ -1708,14 +1708,14 @@ object DbExperimentalMetrics {
       /** The database query being executed. <p>
         * @note
         *   <p> For sanitization see <a
-        *   href="../../docs/database/database-spans.md#sanitization-of-dbquerytext">Sanitization of
-        *   `db.query.text`</a>. For batch operations, if the individual operations are known to have the same query
-        *   text then that query text SHOULD be used, otherwise all of the individual query texts SHOULD be concatenated
-        *   with separator `; ` or some other database system specific separator if more applicable. Even though
-        *   parameterized query text can potentially have sensitive data, by using a parameterized query the user is
-        *   giving a strong signal that any sensitive data will be passed as parameter values, and the benefit to
-        *   observability of capturing the static part of the query text by default outweighs the risk. This attribute
-        *   has stability level RELEASE CANDIDATE.
+        *   href="../../docs/database/database-spans.md#sanitization-of-dbquerytext">Sanitization of `db.query.text`
+        *   </a>. For batch operations, if the individual operations are known to have the same query text then that
+        *   query text SHOULD be used, otherwise all of the individual query texts SHOULD be concatenated with separator
+        *   `; ` or some other database system specific separator if more applicable. Even though parameterized query
+        *   text can potentially have sensitive data, by using a parameterized query the user is giving a strong signal
+        *   that any sensitive data will be passed as parameter values, and the benefit to observability of capturing
+        *   the static part of the query text by default outweighs the risk. This attribute has stability level RELEASE
+        *   CANDIDATE.
         */
       val dbQueryText: AttributeSpec[String] =
         AttributeSpec(

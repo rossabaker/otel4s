@@ -61,7 +61,7 @@ object DnsExperimentalMetrics {
 
       /** Describes the error the DNS lookup failed with. <p>
         * @note
-        *   <p> Instrumentations SHOULD use error code such as one of errors reported by `getaddrinfo`(<a
+        *   <p> Instrumentations SHOULD use error code such as one of errors reported by `getaddrinfo` (<a
         *   href="https://man7.org/linux/man-pages/man3/getaddrinfo.3.html">Linux or other POSIX systems</a> / <a
         *   href="https://learn.microsoft.com/windows/win32/api/ws2tcpip/nf-ws2tcpip-getaddrinfo">Windows</a>) or one
         *   reported by the runtime or client library. If error code is not available, the full name of exception type

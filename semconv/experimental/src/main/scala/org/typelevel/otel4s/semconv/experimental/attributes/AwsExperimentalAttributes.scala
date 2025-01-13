@@ -231,7 +231,7 @@ object AwsExperimentalAttributes {
   val AwsS3Bucket: AttributeKey[String] =
     AttributeKey("aws.s3.bucket")
 
-  /** The source object (in the form `bucket`/`key`) for the copy operation. <p>
+  /** The source object (in the form `bucket` /`key`) for the copy operation. <p>
     * @note
     *   <p> The `copy_source` attribute applies to S3 copy operations and corresponds to the `--copy-source` parameter
     *   of the <a href="https://docs.aws.amazon.com/cli/latest/reference/s3api/copy-object.html">copy-object operation

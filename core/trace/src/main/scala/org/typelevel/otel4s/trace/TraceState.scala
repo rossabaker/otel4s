@@ -28,7 +28,6 @@ import scala.collection.immutable.SeqMap
   *
   *   - Key is opaque string up to 256 characters printable. It MUST begin with a lowercase letter, and can only contain
   *     lowercase letters a-z, digits 0-9, underscores _, dashes -, asterisks *, and forward slashes /.
-  *
   *   - Value is opaque string up to 256 characters printable ASCII RFC0020 characters (i.e., the range 0x20 to 0x7E)
   *     except comma , and =.
   *

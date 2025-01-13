@@ -40,9 +40,7 @@ sealed trait Config {
     *
     * @return
     *   - `Left(ConfigurationError)` - when the key exists in the config but cannot be decoded as `A`
-    *
     *   - `Right(None)` - when the key does not exist in the config
-    *
     *   - `Right(Some(a))` - when the key exists in the config and successfully decoded as `A`
     */
   def get[A: Config.Reader](key: String): Either[ConfigurationError, Option[A]]
@@ -74,9 +72,7 @@ sealed trait Config {
     *
     * @return
     *   - `Left(ConfigurationError)` - when the key exists in the config but cannot be decoded as `A`
-    *
     *   - `Right(None)` - when the key does not exist in the config
-    *
     *   - `Right(Some(a))` - when the key exists in the config and successfully decoded as `A`
     */
   final def get[A: Config.Reader](

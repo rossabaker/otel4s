@@ -139,16 +139,11 @@ private[sdk] object SamplerAutoConfigure {
     *
     * The following options for `otel.traces.sampler` are supported out of the box:
     *   - `always_on` - [[Sampler.alwaysOn]]
-    *
     *   - `always_off` - [[Sampler.alwaysOff]]
-    *
     *   - `traceidratio` - [[Sampler.traceIdRatioBased]], where `otel.traces.sampler.arg` sets the ratio
-    *
     *   - `parentbased_always_on` - [[Sampler.parentBased]] with [[Sampler.alwaysOn]]
-    *
     *   - `parentbased_always_off` - [[Sampler.parentBased]] with [[Sampler.alwaysOff]]
-    *
-    *   - `parentbased_traceidratio`- [[Sampler.parentBased]] with [[Sampler.traceIdRatioBased]], where
+    *   - `parentbased_traceidratio` - [[Sampler.parentBased]] with [[Sampler.traceIdRatioBased]], where
     *     `otel.traces.sampler.arg` sets the ratio
     *
     * @see

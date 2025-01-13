@@ -32,8 +32,8 @@ import org.typelevel.otel4s.context.propagation.TextMapPropagator
 
 import scala.{unchecked => uc}
 
-/** This object provides `asScala` and `asJava` extension methods that convert between Scala and Java `TextMapGetter`s,
-  * `TextMapPropagator`s, and `ContextPropagators`.
+/** This object provides `asScala` and `asJava` extension methods that convert between Scala and Java `TextMapGetter` s,
+  * `TextMapPropagator` s, and `ContextPropagators`.
   *
   * {{{
   *   import io.opentelemetry.api.trace.propagation.W3CTraceContextPropagator
@@ -84,7 +84,7 @@ object PropagatorConverters {
 
     /** Converts a Scala `TextMapPropagator` to a Java `TextMapPropagator`.
       *
-      * The returned Java `TextMapPropagator` is backed by the provided Scala `TextMapPropagator`unless the Scala
+      * The returned Java `TextMapPropagator` is backed by the provided Scala `TextMapPropagator` unless the Scala
       * `TextMapPropagator` was previously obtained from an implicit or explicit call of `asScala`, in which case the
       * original Java `TextMapPropagator` will be returned.
       */

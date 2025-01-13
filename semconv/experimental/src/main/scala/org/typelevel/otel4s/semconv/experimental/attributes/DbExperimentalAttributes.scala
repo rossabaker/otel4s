@@ -286,7 +286,7 @@ object DbExperimentalAttributes {
   /** The database query being executed. <p>
     * @note
     *   <p> For sanitization see <a
-    *   href="../../docs/database/database-spans.md#sanitization-of-dbquerytext">Sanitization of `db.query.text`</a>.
+    *   href="../../docs/database/database-spans.md#sanitization-of-dbquerytext">Sanitization of `db.query.text` </a>.
     *   For batch operations, if the individual operations are known to have the same query text then that query text
     *   SHOULD be used, otherwise all of the individual query texts SHOULD be concatenated with separator `; ` or some
     *   other database system specific separator if more applicable. Even though parameterized query text can

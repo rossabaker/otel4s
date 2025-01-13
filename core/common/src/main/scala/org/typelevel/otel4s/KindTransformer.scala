@@ -36,7 +36,7 @@ trait KindTransformer[F[_], G[_]] {
   /** A higher-kinded function that lifts the kind `F` into a `G`.
     *
     * @note
-    *   This method is usually best implemented by a `liftK` method on `G`'s companion object.
+    *   This method is usually best implemented by a `liftK` method on `G` 's companion object.
     */
   val liftK: F ~> G
 

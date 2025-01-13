@@ -34,7 +34,7 @@ import java.{util => ju}
 import scala.collection.immutable
 import scala.jdk.CollectionConverters._
 
-/** This object provides extension methods that convert between Scala and Java `AttributeKey`s and `Attributes` using
+/** This object provides extension methods that convert between Scala and Java `AttributeKey` s and `Attributes` using
   * `toScala` and `toJava` extension methods, as well as a `toJavaAttributes` extension method that converts
   * `immutable.Iterable[Attribute[_]]` to Java `Attributes`.
   *
@@ -70,7 +70,7 @@ object AttributeConverters {
       private val attributes: immutable.Iterable[Attribute[_]]
   ) extends AnyVal {
 
-    /** Converts an immutable collection of Scala `Attribute`s to Java `Attributes`.
+    /** Converts an immutable collection of Scala `Attribute` s to Java `Attributes`.
       */
     def toJavaAttributes: JAttributes = Explicit.toJavaAttributes(attributes)
   }

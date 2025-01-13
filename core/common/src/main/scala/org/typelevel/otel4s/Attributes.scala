@@ -71,7 +71,7 @@ sealed trait Attributes
   /** Invariant overload of [[scala.collection.IterableOps.concat `IterableOps#concat`]] that returns `Attributes`
     * rather than `Iterable`.
     *
-    * If multiple [[`Attribute`]]s in `this` and/or `that` have the same key, only the final one (according to `that`'s
+    * If multiple [[`Attribute`]]s in `this` and/or `that` have the same key, only the final one (according to `that` 's
     * iterator) will be retained in the resulting `Attributes`.
     */
   def concat(that: IterableOnce[Attribute[_]]): Attributes =
@@ -80,7 +80,7 @@ sealed trait Attributes
   /** Invariant overload of [[scala.collection.IterableOps.++ `IterableOps#++`]] that returns `Attributes` rather than
     * `Iterable`.
     *
-    * If multiple [[`Attribute`]]s in `this` and/or `that` have the same key, only the final one (according to `that`'s
+    * If multiple [[`Attribute`]]s in `this` and/or `that` have the same key, only the final one (according to `that` 's
     * iterator) will be retained in the resulting `Attributes`.
     */
   final def ++(that: IterableOnce[Attribute[_]]): Attributes =

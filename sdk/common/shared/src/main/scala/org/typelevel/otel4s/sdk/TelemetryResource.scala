@@ -47,11 +47,8 @@ sealed trait TelemetryResource {
     *
     * Schema URL merge outcomes:
     *   - if `this` resource's schema URL is empty then the `other` resource's schema URL will be selected
-    *
     *   - if `other` resource's schema URL is empty then `this` resource's schema URL will be selected
-    *
     *   - if `this` and `other` resources have the same non-empty schema URL then this schema URL will be selected
-    *
     *   - if `this` and `other` resources have different non-empty schema URLs then the result will be a merge error
     *
     * @note
